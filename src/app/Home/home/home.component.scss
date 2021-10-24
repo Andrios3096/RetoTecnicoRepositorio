@@ -1,0 +1,143 @@
+.body-home{
+    height: auto;
+    padding: 100px 0px;
+    h1{
+     font-size: 2.8rem;
+     line-height: 35px;
+     text-align: center;    
+    }
+}
+
+.container-fluid
+{
+    padding: 0 3vw 0 3vw;
+    height: 100%;
+}
+
+.tabla-responsive
+{
+    overflow-x: auto;
+    display: flex;
+    justify-content: center;
+}
+
+table
+{
+    margin: 0 0 10px 0;
+    width: 100%;
+}
+
+td 
+{
+    padding-right: 10px !important;
+}
+
+th {
+    padding-right: 10px !important;
+}
+
+td .border
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    border: 1px dashed #A0B3C3;
+    border-radius: 50%;
+}
+
+.btn-table-items
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.btn-table-items .btn-edit
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(242, 153, 74, 0.1);
+    opacity: 0.5;
+    color: #F2994A;
+    fill: #F2994A;
+    width: 40px;
+    padding: 0;
+    height: 40px;
+    border-radius: 4px;
+    font-size: 12px;
+
+}
+
+.btn-table-items .btn-delete
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 40px;
+    height: 40px;
+    fill: #E4002B;
+    padding: 0;
+
+    background: rgba(228, 0, 43, 0.1);
+    opacity: 0.5;
+    border-radius: 4px;
+}
+
+
+.search-item
+{
+    display: flex;
+    flex: row;
+    align-items: center;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 750px) {
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+}
+
+.search-item .has-search
+{
+    margin: 2vh 2vh 2vh 0;
+    width: 70vw;
+
+    @media only screen and (max-width: 750px) {
+        width: 100%;
+      }
+}
+
+.search-item .has-search2
+{
+    margin: 10px;
+    width: 100%;
+}
+
+.search-item .form-control {
+    padding-left: 2.375rem;
+}
+
+.icon-search
+{
+        position: absolute;
+        z-index: 2;
+        display: block;
+        width: 2.375rem;
+        height: 2.375rem;
+        line-height: 2.375rem;
+        text-align: center;
+        pointer-events: none;
+        color: #aaa;
+}
+
+.btn-new-product
+{
+    background-color: #BA0C2F;
+    margin: 2vh 0 2vh 0;
+    color: white;
+    width: 220px;
+}

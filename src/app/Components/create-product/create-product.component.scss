@@ -1,0 +1,57 @@
+.container
+{
+    position: relative;
+    width: 650px;
+    padding: 30px 30px 0 30px;
+    max-width: 100%;
+}
+
+.form-material
+{
+    margin-top: 50px;
+}
+
+mat-form-field
+{
+    width: 48%;
+    padding: 0;
+    margin: 0;
+
+    @media only screen and (max-width: 800px) {
+        width: 100%;
+    }
+
+}
+
+.form-group
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0px;
+}
+
+.items-btn
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.btn-new-product
+{
+    background-color: #BA0C2F;
+    margin: 2vh 0 2vh 0;
+    color: white;
+    width: 220px;
+}
+
+.btn-cancel
+{
+    background-color: white;
+    margin: 2vh 0 2vh 0;
+    color:#BA0C2F;
+    width: 220px;
+    border: solid 1px #BA0C2F;
+}

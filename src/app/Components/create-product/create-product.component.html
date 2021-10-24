@@ -1,0 +1,81 @@
+<div class="container">
+    <h1>
+      <b>
+        <span >Crear Producto</span>
+      </b>
+    </h1>
+
+  
+    <form
+      ngNativeValidate
+      [formGroup]="form"
+      class="form-horizontal form-material"
+    >
+    <h2>Información del producto</h2>
+  
+      <div class="form-group">
+  
+            <mat-form-field appearance="outline">
+              <mat-label>Nombre</mat-label>
+              <input 
+                matInput
+                autocomplete="off"
+                placeholder="Ingresa nombre"
+                name="cProductName"
+                formControlName="cProductName"
+              />
+            </mat-form-field>
+  
+            <mat-form-field appearance="outline">
+              <mat-label>Precio</mat-label>
+              <input
+                matInput
+                autocomplete="off"
+                placeholder="Ingresa un precio"
+                type="number"
+                name="nPrice"
+                formControlName="nPrice"
+              />
+            </mat-form-field>
+  
+      </div>
+  
+      <div class="form-group">
+  
+            <mat-form-field appearance="outline">
+              <mat-label>Cantidad</mat-label>
+              <input
+                matInput
+                autocomplete="off"
+                placeholder="Ingresa una cantidad"
+                type="number"
+                name="nStock"
+                formControlName="nStock"
+              />
+            </mat-form-field>
+      </div>
+  
+      <div class="items-btn">
+  
+        <div class="">
+          <button mat-flat-button class="btn-cancel"
+          [disabled] = "disabledProc"
+          [routerLink]="['']">
+            Cancelar
+          </button>
+        </div>
+  
+        <button
+          mat-flat-button
+          [disabled] = "disabledProc"
+          class="btn-new-product"
+          type="submit"
+          (click)="addProduct()"
+        >
+          Guardar
+        </button>
+  
+      </div>
+  
+    </form>
+  </div>
